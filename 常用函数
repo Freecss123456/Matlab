@@ -1,0 +1,10 @@
+一、polyfit(最小二乘法拟合)
+  polyfit(x,y,n )             n:拟合多项式的次数
+  //polyfit 做出来的值从左到右表示从高次到低次的多项式系数
+
+  例：[P S mu]=polyfit(x,y,n)
+  //P-返回n次拟合多项式系数从高到低
+  //S-包含三个值,其中normr是残差平方和
+  //mu-包含两个值 mean（x）均值，std（x）标准差。
+
+  例：nihe_result=polyval(P,x)
